@@ -1,0 +1,31 @@
+# Environments and dependencies
+.env
+.env.*
+.venv/
+venv/
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pytest_cache/
+
+# Logs and artifacts
+*.log
+*.tmp
+*.bak
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Coverage
+htmlcov/
+.coverage*
+
+# Build outputs
+build/
+dist/

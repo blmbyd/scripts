@@ -1,0 +1,16 @@
+[tool.black]
+line-length = 100
+target-version = ["py311", "py310"]
+include = "\.(py)$"
+
+[tool.ruff]
+line-length = 100
+extend-select = ["I", "B", "C4"]
+ignore = ["E203", "W503"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["glacier_tools"]
+combine-as-imports = true
+
+[tool.ruff.format]
+quote-style = "double"
