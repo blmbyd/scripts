@@ -5,7 +5,7 @@ A collection of utility scripts organized by programming language, designed for 
 ## Repository Structure
 
 ```
-scripts/
+.
 ├── python/          # Python scripts and utilities
 ├── powershell/      # PowerShell scripts and utilities
 ├── node/            # Node.js scripts and utilities (placeholder)
@@ -38,7 +38,7 @@ PowerShell scripts are located in `powershell/scripts/`.
 
 **Linting:**
 ```powershell
-Invoke-ScriptAnalyzer -Path powershell -Settings PSScriptAnalyzerSettings.psd1
+Invoke-ScriptAnalyzer -Path powershell -Settings powershell/PSScriptAnalyzerSettings.psd1
 ```
 
 See [powershell/README.md](powershell/README.md) for more information.
@@ -48,7 +48,7 @@ Node.js scripts will be located in `node/scripts/`. Currently a placeholder for 
 
 **Setup:**
 ```bash
-npm install
+cd node && npm install
 ```
 
 See [node/README.md](node/README.md) for more information.
@@ -58,7 +58,7 @@ See [node/README.md](node/README.md) for more information.
 This repository follows specific conventions for structure, naming, and development practices. Please review [docs/CONVENTIONS.md](docs/CONVENTIONS.md) before contributing.
 
 **Key conventions:**
-- Scripts are organized in language-specific folders under `scripts/` subdirectories
+- Scripts are organized in language-specific folders (python/, powershell/, node/) with `scripts/` subdirectories
 - Use kebab-case for script filenames
 - Keep secrets in `.env` files (not committed to version control)
 - Add dry-run flags for destructive operations
@@ -71,7 +71,7 @@ The `output/` directory is used for storing generated files, logs, and artifacts
 ## Contributing
 
 When adding new scripts:
-1. Place them in the appropriate language folder under `scripts/`
+1. Place them in the appropriate language folder's `scripts/` subdirectory (e.g., python/scripts/)
 2. Update the language-specific README with documentation
 3. Include usage examples and command-line options
 4. Add tests where applicable
